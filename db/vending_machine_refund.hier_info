@@ -1,0 +1,25 @@
+|vending_machine_refund
+clk => state~1.DATAIN
+rst => state~3.DATAIN
+refund => next_state.OUTPUTSELECT
+refund => next_state.OUTPUTSELECT
+refund => next_state.OUTPUTSELECT
+refund => next_state.OUTPUTSELECT
+refund => next_state.OUTPUTSELECT
+refund => next_state.OUTPUTSELECT
+refund => next_state.OUTPUTSELECT
+refund => change.OUTPUTSELECT
+refund => beverage.OUTPUTSELECT
+refund => Selector5.IN2
+refund => Selector4.IN3
+refund => Selector5.IN3
+refund => Selector6.IN2
+coin[0] => Equal0.IN0
+coin[0] => Equal1.IN1
+coin[1] => Equal0.IN1
+coin[1] => Equal1.IN0
+beverage << Selector6.DB_MAX_OUTPUT_PORT_TYPE
+change[0] << Selector5.DB_MAX_OUTPUT_PORT_TYPE
+change[1] << Selector4.DB_MAX_OUTPUT_PORT_TYPE
+
+
